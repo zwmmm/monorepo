@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/core",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "yi": "./bin/yi"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "compiled"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup-node src/index.ts --format cjs --dts",
+    "dev": "pnpm run build --watch",
+    "prepublishOnly": "pnpm run build"
+  }
+}
