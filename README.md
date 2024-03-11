@@ -1,5 +1,6 @@
 # Monorepo 模板
 
-## 技术栈
-
-1.
+1. turbo
+2. tsup
+3. pnpm workspaces
+4. @stylistic/eslint-plugin
