@@ -4,16 +4,16 @@
   "publishConfig": {
     "access": "public"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "yi": "./bin/yi"
   },
   "files": [
     "bin",
-    "dist",
-    "compiled"
+    "compiled",
+    "dist"
   ],
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup-node src/index.ts --format cjs --dts",
     "dev": "pnpm run build --watch",
