@@ -1,3 +1,4 @@
 export function cl() {
-  console.log("monorepo core package");
+  // eslint-disable-next-line no-console
+  console.log('monorepo core package');
 }
